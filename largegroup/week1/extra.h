@@ -55,6 +55,6 @@ Event *UpsideDown(Event *head)
 		else p2->next = p1;
 		p1 = p2;
 	}
-    return(head)
+    return(head);
 	printf("链表已反转\n");
 }
