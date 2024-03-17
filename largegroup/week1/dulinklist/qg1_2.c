@@ -22,15 +22,15 @@ Event *getnode(Event *duhead){
 
     while(strlen(new->data)){
         
-        if(duhead == NULL){
+        if(duhead == NULL){ 
             new->front = NULL;
             new->next = NULL;
             duhead = new;
         }else{
-            follow->next = new;
-            new->front = follow;
-            new->next = NULL; 
-            follow = follow->next;
+            follow->next = new;  //连接新节点
+            new->front = follow; //反向连接旧节点
+            new->next = NULL;    //新节点next指针指向null
+            follow = follow->next; //follow指向新节点（便于新节点反向连接）
         }
         
         new = (Event*)malloc(Len);
@@ -39,6 +39,6 @@ Event *getnode(Event *duhead){
         fflush(stdin);
     }
 
-    free(new);
+    free(new); //释放申请的冗余空间
     return(duhead);
 }
