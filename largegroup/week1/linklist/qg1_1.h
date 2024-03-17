@@ -39,6 +39,8 @@ Event *getnode(Event *head){ //获取节点
     tail->next = NULL;
     return(head);
 }
+//
+//
 //以下是详细代码
 #include <stdio.h>
 #include <stdlib.h>
