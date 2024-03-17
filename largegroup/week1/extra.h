@@ -50,11 +50,11 @@ Event *UpsideDown(Event *head)
 		a++;
 		p2 = p3;
 		p3 = p3->next;
-		if (p3 == NULL) head = p2;
+		if (p3 == NULL) head = p2; //将头指针倒置
 		if (a == 1) tail = p1, p1->next = NULL;
 		else p2->next = p1;
 		p1 = p2;
 	}
-    return()
+    return(head)
 	printf("链表已反转\n");
 }
