@@ -30,7 +30,7 @@ Event *getnode(Event *head){ //获取节点
         }
 
         new = (Event *)malloc(Len);
-        printf("Please input the data (enter to stop it):> ");
+        printf("Please input the data (enter only to exit):> ");
         gets(new->data);
         fflush(stdin);
     }
