@@ -41,8 +41,7 @@ Event *getnode(Event *head){ //获取节点
     return(head);
 }
 //以下为简化反转模型（尚未应用到主程序中）
-Event *UpsideDown(Event *head)
-{
+Event *UpsideDown(Event *head){
 	int a = 0;
 	Event *p1 = head, *p2 = head, *p3 = head;//p3正向遍历,p2与p1反向连接
 	while (p3 != NULL)
@@ -58,4 +57,20 @@ Event *UpsideDown(Event *head)
     return(head);
 	printf("链表已反转\n");
 }
-//
+//检测是否为循环链表
+void *detect(Event *head){
+        Event *anchor *check; //锚指针 游历指针
+        check = anchor = head; 
+	while(check->next){
+		if(check->next == NULL) {//检测是否有指向空的指针
+			printf("It is NOT a circular linked list!\n");
+			break;
+		}
+		else check = check->next;
+		if(check == anchor){//检测是否游历回“锚指针”
+			printf("It is a circular linked list!");
+			break;
+		}
+	}
+      
+}
