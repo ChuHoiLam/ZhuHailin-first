@@ -1,4 +1,3 @@
-
 #define MAXQUEUE 10
 typedef struct Aqueue
 {
