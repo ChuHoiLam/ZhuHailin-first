@@ -1,1 +1,3 @@
+#ifndef LQUEUE_H_INCLUDED
+#define LQUEUE_H_INCLUDED
 
