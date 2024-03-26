@@ -1,0 +1,596 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+a{
+    color: rgb(32, 33, 36);
+}
+
+.header{
+    display:block;
+    position: relative;
+    height: 56px;
+    background-color: #fff;
+}
+
+.dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 12px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+
+.logo{
+   display: flex;
+   float: left;
+   height: 56px;
+   flex-grow: 1;
+   margin-left: 4px;
+   align-items: center;
+   cursor: pointer;
+}
+
+.logopic{
+    display: flex;
+    height: 46%;
+}
+
+.dropdown, .logo{
+    float: left;
+}
+
+.navi{
+    position: absolute;
+    right: 140px;;
+    display: flex;
+    float: left;
+    height: 56px;
+}
+
+.navi ul .outerLink{
+    display: flex;
+    float: left;
+    color: inherit;
+    font-weight: 500;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+    padding: 10px 8px;
+}
+
+.inner{
+    line-height: 1.25rem;
+    font-size: .875rem;
+    font-family: "Google Sans", "Noto Naskh Arabic UI", Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: .0178571429em;
+    padding: 8px;
+    overflow: hidden;
+    position: relative;
+    text-transform: none;
+    border-bottom: 0.5px solid rgb(26, 115, 232, 40%);
+}
+
+.navi ul .outerLink a div:hover{
+     border-bottom: 3px solid rgb(26, 115, 232, 70%);
+}
+
+.searchbox{   
+    display: flex;
+    position: absolute;
+    right: 102px;
+    flex-shrink: 0;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+    margin-left: 4px;
+   
+    flex-grow: 1;
+}
+
+.searchbox button{  
+    flex-shrink: 0;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    margin-left: 4px;
+    margin-top: 4px;
+    flex-grow: 1;
+    background: url(D:/HTML_concerning/image/menu_FILL0_wght400_GRAD0_opsz24.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.appbox{
+    display: flex;
+    position: absolute;
+    right: 50px;
+    flex-shrink: 0;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.app:hover{
+   background-color: azure;
+}
+
+.gridsofApp{
+    display: block;
+    margin: 12px auto;
+    align-items: center;
+}
+
+.portrait{
+    display: flex;
+    position: relative;
+    justify-content: right;
+    float: right;
+    flex-shrink: 0;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+.portpic{
+    display: block;
+    height:36px;
+    width: 36px;
+    border-radius: 50%;
+    margin: 6px;
+    align-items: center;
+}
+
+.first{
+    padding: 30px 0;
+}
+
+.headline h2{
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.75rem;
+    letter-spacing: 0;
+    font-weight: 370;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.subline h3{
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: .00625em;
+    font-weight: 350;    
+    color: var(--subtitle-color, rgb(95, 99, 104));
+    margin-bottom: 0;
+    margin-top: 4px;
+    margin-bottom: 35px;
+}
+
+
+/*第一大块*/
+.first{
+    margin-top: 0;
+    overflow: hidden;
+    padding: 24px 0;
+    position: relative;
+}
+
+.first .innerbox{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+/*照片 盒子*/
+.first .innerbox ul{
+    display: flex;
+    justify-content: center;
+}
+.first .innerbox ul li{
+    position:relative;
+    overflow: hidden;
+    float: left;
+    justify-content: space-around;
+    border-radius: 8px;
+    margin: 8px;
+    width: 270px;
+    height: 420.8px;
+    display: grid;
+    
+}
+.first .innerbox ul li img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    grid-column: 1;
+    grid-row: 1;
+    transition: 0.5s;
+}
+.first .innerbox .imgbox0:hover img {
+    transform: scale(1.2); /* Increase the size by 20% */
+    transition: transform .5s ease-in-out; /* Animate the size change */
+}
+.first .innerbox .imgbox0:hover .content{
+    position: relative;
+    width: 270px;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+    color: #fff;
+    background-color: rgba(0,0,0,0.55);
+}
+.first .innerbox ul li .content{
+    position: relative;
+    width: 270px;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+    color: #fff;
+    background-color: rgba(0,0,0,0.18);
+    transition: 0.5s;
+}
+
+
+.first .innerbox ul li button{
+    position: relative;
+    bottom: -360px;
+    right: -77px;
+    grid-column: 1;
+    grid-row: 1;
+    cursor: pointer;
+    border: solid;
+    border-width: 2px;
+    border-radius: 2px;
+    width: 108.2px;
+    height: 40px;
+    border-color: #fff;
+    background-color: rgb(0,0,0,0);
+    color: #fff;
+}
+.first .innerbox ul li h3{
+    font-weight: 400;
+    padding-top: 163px;
+    font-family: "Lato";
+    text-align: center;
+}
+.first .innerbox ul li h4{
+    font-weight: 400;
+    font-size: small;
+    margin-top: 8px;
+    font-stretch: expanded;
+    font-family: "Lato";
+    text-align: center;
+}
+
+
+/*第二大块*/
+.second .longbox1{
+    height: 150px;
+    margin-top: 30px;
+    background-image: url(C:/Users/Lenovo/Desktop/RDC一轮考核/image/20.jpg);
+    background-size: cover;
+    filter: blur(8px);
+    border: #fff;
+}
+
+.second .longcontent{
+    position: relative;
+    top:-90px;
+    text-align: left;
+    margin-left: 18px;
+    color: #fff;;
+    overflow: hidden;
+}
+
+.second .longcontent h1{
+    font-family: "Lato";
+    font-size: 1.25em;
+    font-weight: 400;
+}
+.second .longcontent span{
+    font-family: "Lato";
+    font-size: 0.9em;
+    font-weight: 370;
+    line-height: 15px;
+}
+.zoom{
+    position: relative;
+    top:-83px;
+    right: -18px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(26, 115, 232);
+    color: #fff;
+    text-align: center;
+    font-family: "Lato";
+    font-size: 10px;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+}
+
+/*第三大块*/
+.third{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.third .gamestitle{
+    height: 74px;
+    margin: 0 auto;
+    margin-bottom: 26.2px;
+}
+.third .gamestitle .gamestitlepic{
+    display: flex;
+    justify-content: center;
+}
+.gamespicbox{
+    width: 1144px;
+    margin: 0 auto;
+}
+.third .gamespicbox ul{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 1144px;
+}
+.third .gamespicbox ul a{
+    display: block;
+    width: 205px;
+    height: 205px;
+    margin: 60px;
+    margin-bottom: 100px;
+}
+.third .gamespicbox ul li{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 215px;
+    height: 215px;
+    border: 4px solid rgba(0,0,0,0);
+    border-radius: 50%;
+    overflow: auto;
+    overflow: hidden;
+}
+.third .gamespicbox ul a li img{
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.third .gamespicbox ul button{
+    position: relative;
+    border: none;
+    text-align: center;
+    font-family: "Lato";
+    font-size: 14px;
+    width: 60px;
+    height: 32px;
+    border-radius: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.third a .moregames{
+    position: relative;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Lato";
+    width: 130px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: rgb(26, 115, 232);
+    color: #fff;
+}
+.third .gamespicbox ul .btn001{
+    position: relative;
+    right: -10px;
+    top:-10px;
+    background-color:blueviolet;
+}
+.third .gamespicbox ul .btn002{
+    position: relative;
+    top:-10px;
+    right: -12px;
+    background-color: rgb(26, 115, 232);
+}
+.third .gamespicbox ul .btn003{
+    position: relative;
+    top:-10px;
+    right: -12px;
+    background-color: blueviolet;
+}
+
+.third .moregames{
+    text-align: center;
+    cursor: pointer;
+}
+
+.third .gamespicbox ul a li img:hover{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/*第五大快*/
+.fifth{
+    margin-bottom: 60px;
+}
+
+.fifth .fifinnerbox{
+    margin-top: 25px;
+    text-align: center;
+}
+.fifth .fifinnerbox .fifpic{
+    margin: 0 auto;
+    width: 1130px;
+   display: flex;
+   overflow: hidden;
+   justify-content: center;
+   border-radius: 8px;
+}
+.fifth .fifinnerbox .fifpic img{
+    width: 122%;
+    height: 122%;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.fifth .fifinnerbox .fifpic img:hover{
+    transform: scale(1.1);
+}
+.fifth .fifinnerbox .fifsubtitle .fifshare {
+    width: 18px;
+    height: 18px;
+}
+.fifth .fifinnerbox .fifsubtitle .fifsharebox{
+    position: relative;
+    right: -686px;
+    margin-top: 3px;
+}
+.fifth .fifinnerbox .fifsubtitle{
+    position: relative;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    right: 345px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-weight: 450;
+    font-family: 'Lato';
+    color: rgb(0,0,0,0.8);
+}
+.fifth .fifinnerbox .fifbtnbox{
+    margin-top: 35px;
+}
+.fifth .fifinnerbox .fifbtnbox button{
+    padding: 8px 14px;
+    margin: 2px;
+    font-family: 'Lato';
+    text-align: center;
+    font-weight: 500;
+    color: rgb(0,0,0,0.9);
+    border: 2px solid rgb(0,0,0,0.4);
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+}
+/*第六大块*/
+.sixth{
+    margin-bottom: 60px;
+}
+.sixth .innerbox ul{
+    display: flex;
+    justify-content: center;
+}
+.sixth .innerbox ul li{
+    position:relative;
+    overflow: hidden;
+    float: left;
+    justify-content: space-around;
+    border-radius: 8px;
+    margin: 8px;
+    width: 270px;
+    height: 420.8px;
+    display: grid;
+    
+}
+.sixth .innerbox ul li img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    grid-column: 1;
+    grid-row: 1;
+    transition: 0.5s;
+}
+.sixth .innerbox .imgbox0:hover img {
+    transform: scale(1.2); /* Increase the size by 20% */
+    transition: transform .5s ease-in-out; /* Animate the size change */
+}
+.sixth .innerbox ul li .content{
+    position: relative;
+    width: 270px;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+    color: #fff;
+    background-color: rgba(0,0,0,0.18);
+    transition: 0.5s;
+}
+.sixth .innerbox .imgbox0:hover .content{
+    position: relative;
+    width: 270px;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+    color: #fff;
+    background-color: rgba(0,0,0,0.55);
+}
+.sixth .innerbox ul li .content{
+    position: relative;
+    width: 270px;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+    color: #fff;
+    background-color: rgba(0,0,0,0.18);
+    transition: 0.5s;
+}
+
+.sixth .innerbox ul li button{
+    position: relative;
+    bottom: -360px;
+    right: -77px;
+    grid-column: 1;
+    grid-row: 1;
+    cursor: pointer;
+    border: solid;
+    border-width: 2px;
+    border-radius: 2px;
+    width: 108.2px;
+    height: 40px;
+    border-color: #fff;
+    background-color: rgb(0,0,0,0);
+    color: #fff;
+}
+
+.sixth .innerbox ul li h3{
+    display: block;
+    justify-content: center;
+    font-weight: 400;
+    margin-top: 180px;
+    font-family: "Lato";
+    text-align: center;
+}
